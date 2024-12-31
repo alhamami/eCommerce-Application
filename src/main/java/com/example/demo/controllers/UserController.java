@@ -87,7 +87,7 @@ public class UserController {
 		user.setPassword(encoder.encode(createUserRequest.getPassword()));
 		userRepository.save(user);
 
-		logger.info("User "+user.toString()+" created successfully");
+		logger.info("User ["+user.getUsername()+"] with id ["+user.getId()+"] created successfully");
 
 		return ResponseEntity.ok(user);
 
