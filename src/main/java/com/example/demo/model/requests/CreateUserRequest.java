@@ -2,6 +2,8 @@ package com.example.demo.model.requests;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+
+
 public class CreateUserRequest {
 
 	@JsonProperty
